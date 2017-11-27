@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5A0AE451FCCA99F0021CC52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0AE441FCCA99F0021CC52 /* AppDelegate.m */; };
+		F5A0AE481FCCA99F0021CC52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0AE471FCCA99F0021CC52 /* ViewController.m */; };
+		F5A0AE4B1FCCA99F0021CC52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A0AE491FCCA99F0021CC52 /* Main.storyboard */; };
+		F5A0AE4D1FCCA99F0021CC52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A0AE4C1FCCA99F0021CC52 /* Assets.xcassets */; };
+		F5A0AE501FCCA99F0021CC52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A0AE4E1FCCA99F0021CC52 /* LaunchScreen.storyboard */; };
+		F5A0AE531FCCA99F0021CC52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0AE521FCCA99F0021CC52 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5A0AE401FCCA99F0021CC52 /* HW03-DeLeonA-SQLiteDBExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW03-DeLeonA-SQLiteDBExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A0AE431FCCA99F0021CC52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5A0AE441FCCA99F0021CC52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5A0AE461FCCA99F0021CC52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5A0AE471FCCA99F0021CC52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5A0AE4A1FCCA99F0021CC52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5A0AE4C1FCCA99F0021CC52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5A0AE4F1FCCA99F0021CC52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5A0AE511FCCA99F0021CC52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A0AE521FCCA99F0021CC52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5A0AE3D1FCCA99F0021CC52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5A0AE371FCCA99F0021CC52 = {
+			isa = PBXGroup;
+			children = (
+				F5A0AE421FCCA99F0021CC52 /* HW03-DeLeonA-SQLiteDBExample */,
+				F5A0AE411FCCA99F0021CC52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5A0AE411FCCA99F0021CC52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5A0AE401FCCA99F0021CC52 /* HW03-DeLeonA-SQLiteDBExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5A0AE421FCCA99F0021CC52 /* HW03-DeLeonA-SQLiteDBExample */ = {
+			isa = PBXGroup;
+			children = (
+				F5A0AE431FCCA99F0021CC52 /* AppDelegate.h */,
+				F5A0AE441FCCA99F0021CC52 /* AppDelegate.m */,
+				F5A0AE461FCCA99F0021CC52 /* ViewController.h */,
+				F5A0AE471FCCA99F0021CC52 /* ViewController.m */,
+				F5A0AE491FCCA99F0021CC52 /* Main.storyboard */,
+				F5A0AE4C1FCCA99F0021CC52 /* Assets.xcassets */,
+				F5A0AE4E1FCCA99F0021CC52 /* LaunchScreen.storyboard */,
+				F5A0AE511FCCA99F0021CC52 /* Info.plist */,
+				F5A0AE521FCCA99F0021CC52 /* main.m */,
+			);
+			path = "HW03-DeLeonA-SQLiteDBExample";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5A0AE3F1FCCA99F0021CC52 /* HW03-DeLeonA-SQLiteDBExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A0AE561FCCA99F0021CC52 /* Build configuration list for PBXNativeTarget "HW03-DeLeonA-SQLiteDBExample" */;
+			buildPhases = (
+				F5A0AE3C1FCCA99F0021CC52 /* Sources */,
+				F5A0AE3D1FCCA99F0021CC52 /* Frameworks */,
+				F5A0AE3E1FCCA99F0021CC52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HW03-DeLeonA-SQLiteDBExample";
+			productName = "HW03-DeLeonA-SQLiteDBExample";
+			productReference = F5A0AE401FCCA99F0021CC52 /* HW03-DeLeonA-SQLiteDBExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5A0AE381FCCA99F0021CC52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Asdruval De Leon";
+				TargetAttributes = {
+					F5A0AE3F1FCCA99F0021CC52 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F5A0AE3B1FCCA99F0021CC52 /* Build configuration list for PBXProject "HW03-DeLeonA-SQLiteDBExample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5A0AE371FCCA99F0021CC52;
+			productRefGroup = F5A0AE411FCCA99F0021CC52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5A0AE3F1FCCA99F0021CC52 /* HW03-DeLeonA-SQLiteDBExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5A0AE3E1FCCA99F0021CC52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A0AE501FCCA99F0021CC52 /* LaunchScreen.storyboard in Resources */,
+				F5A0AE4D1FCCA99F0021CC52 /* Assets.xcassets in Resources */,
+				F5A0AE4B1FCCA99F0021CC52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5A0AE3C1FCCA99F0021CC52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A0AE481FCCA99F0021CC52 /* ViewController.m in Sources */,
+				F5A0AE531FCCA99F0021CC52 /* main.m in Sources */,
+				F5A0AE451FCCA99F0021CC52 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5A0AE491FCCA99F0021CC52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A0AE4A1FCCA99F0021CC52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5A0AE4E1FCCA99F0021CC52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A0AE4F1FCCA99F0021CC52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5A0AE541FCCA99F0021CC52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5A0AE551FCCA99F0021CC52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5A0AE571FCCA99F0021CC52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2245T84ZP;
+				INFOPLIST_FILE = "HW03-DeLeonA-SQLiteDBExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itcpremier.HW03-DeLeonA-SQLiteDBExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5A0AE581FCCA99F0021CC52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2245T84ZP;
+				INFOPLIST_FILE = "HW03-DeLeonA-SQLiteDBExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itcpremier.HW03-DeLeonA-SQLiteDBExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5A0AE3B1FCCA99F0021CC52 /* Build configuration list for PBXProject "HW03-DeLeonA-SQLiteDBExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A0AE541FCCA99F0021CC52 /* Debug */,
+				F5A0AE551FCCA99F0021CC52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A0AE561FCCA99F0021CC52 /* Build configuration list for PBXNativeTarget "HW03-DeLeonA-SQLiteDBExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A0AE571FCCA99F0021CC52 /* Debug */,
+				F5A0AE581FCCA99F0021CC52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5A0AE381FCCA99F0021CC52 /* Project object */;
+}
