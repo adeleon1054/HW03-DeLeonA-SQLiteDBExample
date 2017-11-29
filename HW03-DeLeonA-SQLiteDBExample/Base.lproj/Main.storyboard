@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,129 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDr-ua-SHf">
+                                <rect key="frame" x="16" y="57" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fCc-Wc-5xm">
+                                <rect key="frame" x="87" y="52" width="272" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2N-Yt-Saj">
+                                <rect key="frame" x="16" y="101" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wpn-aP-SRZ">
+                                <rect key="frame" x="87" y="96" width="272" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6q-Sh-Tio">
+                                <rect key="frame" x="16" y="147" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hth-M1-htk">
+                                <rect key="frame" x="87" y="142" width="272" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89v-VT-5Qu">
+                                <rect key="frame" x="16" y="261" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="027-Zl-ouA"/>
+                                </constraints>
+                                <state key="normal" title="Add Record"/>
+                                <connections>
+                                    <action selector="addRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0f-Rh-6II"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh2-9E-Uxd">
+                                <rect key="frame" x="16" y="308" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ING-GS-igW"/>
+                                </constraints>
+                                <state key="normal" title="Find Record"/>
+                                <connections>
+                                    <action selector="findRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KWP-s0-FoX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0E7-tU-nqi">
+                                <rect key="frame" x="16" y="356" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1ee-OH-p3E"/>
+                                </constraints>
+                                <state key="normal" title="Delete Record"/>
+                                <connections>
+                                    <action selector="deleteRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Y9-sH-Ykf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-rR-4Y6">
+                                <rect key="frame" x="16" y="204" width="343" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fCc-Wc-5xm" firstAttribute="trailing" secondItem="Wpn-aP-SRZ" secondAttribute="trailing" id="4sj-nt-4O2"/>
+                            <constraint firstItem="Wpn-aP-SRZ" firstAttribute="top" secondItem="fCc-Wc-5xm" secondAttribute="bottom" constant="14" id="5V0-al-OtS"/>
+                            <constraint firstItem="hth-M1-htk" firstAttribute="trailing" secondItem="cgV-rR-4Y6" secondAttribute="trailing" id="7Jb-bQ-zpz"/>
+                            <constraint firstItem="Wpn-aP-SRZ" firstAttribute="leading" secondItem="hth-M1-htk" secondAttribute="leading" id="7qU-bs-em1"/>
+                            <constraint firstItem="cgV-rR-4Y6" firstAttribute="leading" secondItem="89v-VT-5Qu" secondAttribute="leading" id="Bvn-kN-BJT"/>
+                            <constraint firstItem="fCc-Wc-5xm" firstAttribute="leading" secondItem="Wpn-aP-SRZ" secondAttribute="leading" id="EtT-z1-87r"/>
+                            <constraint firstItem="fCc-Wc-5xm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="FDd-92-NT9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0E7-tU-nqi" secondAttribute="bottom" constant="281" id="HgK-Ko-2UB"/>
+                            <constraint firstItem="fCc-Wc-5xm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JOc-Li-RL9"/>
+                            <constraint firstItem="G2N-Yt-Saj" firstAttribute="centerY" secondItem="Wpn-aP-SRZ" secondAttribute="centerY" id="Lxi-84-cGx"/>
+                            <constraint firstItem="89v-VT-5Qu" firstAttribute="top" secondItem="cgV-rR-4Y6" secondAttribute="bottom" constant="26" id="MTy-cw-yFb"/>
+                            <constraint firstItem="89v-VT-5Qu" firstAttribute="leading" secondItem="qh2-9E-Uxd" secondAttribute="leading" id="T3j-Z4-yt7"/>
+                            <constraint firstItem="fDr-ua-SHf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Zkk-eA-ieg"/>
+                            <constraint firstItem="cgV-rR-4Y6" firstAttribute="top" secondItem="hth-M1-htk" secondAttribute="bottom" constant="32" id="ZnZ-Xf-zjZ"/>
+                            <constraint firstItem="G2N-Yt-Saj" firstAttribute="leading" secondItem="N6q-Sh-Tio" secondAttribute="leading" id="Zxw-Rd-q8Y"/>
+                            <constraint firstItem="N6q-Sh-Tio" firstAttribute="leading" secondItem="cgV-rR-4Y6" secondAttribute="leading" id="ahO-Ow-evJ"/>
+                            <constraint firstItem="N6q-Sh-Tio" firstAttribute="top" secondItem="G2N-Yt-Saj" secondAttribute="bottom" constant="25" id="bpY-Mf-dAT"/>
+                            <constraint firstItem="Wpn-aP-SRZ" firstAttribute="trailing" secondItem="hth-M1-htk" secondAttribute="trailing" id="d64-qo-fIt"/>
+                            <constraint firstItem="qh2-9E-Uxd" firstAttribute="top" secondItem="89v-VT-5Qu" secondAttribute="bottom" constant="17" id="dUB-uV-den"/>
+                            <constraint firstItem="fDr-ua-SHf" firstAttribute="centerY" secondItem="fCc-Wc-5xm" secondAttribute="centerY" id="gdf-EV-CIS"/>
+                            <constraint firstItem="hth-M1-htk" firstAttribute="top" secondItem="Wpn-aP-SRZ" secondAttribute="bottom" constant="16" id="kcQ-ry-rwH"/>
+                            <constraint firstItem="Wpn-aP-SRZ" firstAttribute="leading" secondItem="G2N-Yt-Saj" secondAttribute="trailing" constant="3" id="lWV-8E-pPM"/>
+                            <constraint firstItem="fDr-ua-SHf" firstAttribute="leading" secondItem="G2N-Yt-Saj" secondAttribute="leading" id="n2I-dI-6gx"/>
+                            <constraint firstItem="qh2-9E-Uxd" firstAttribute="trailing" secondItem="0E7-tU-nqi" secondAttribute="trailing" id="poa-Fh-vrj"/>
+                            <constraint firstItem="qh2-9E-Uxd" firstAttribute="leading" secondItem="0E7-tU-nqi" secondAttribute="leading" id="s5q-mC-1gv"/>
+                            <constraint firstItem="N6q-Sh-Tio" firstAttribute="centerY" secondItem="hth-M1-htk" secondAttribute="centerY" id="siR-XW-Whq"/>
+                            <constraint firstItem="0E7-tU-nqi" firstAttribute="top" secondItem="qh2-9E-Uxd" secondAttribute="bottom" constant="18" id="u29-du-IqP"/>
+                            <constraint firstItem="89v-VT-5Qu" firstAttribute="trailing" secondItem="qh2-9E-Uxd" secondAttribute="trailing" id="w5B-WY-EW7"/>
+                            <constraint firstItem="fDr-ua-SHf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="ymF-my-C9A"/>
+                            <constraint firstItem="cgV-rR-4Y6" firstAttribute="trailing" secondItem="89v-VT-5Qu" secondAttribute="trailing" id="zfl-ly-xqn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="lblStatus" destination="cgV-rR-4Y6" id="uP9-9n-Y3C"/>
+                        <outlet property="txtAddress" destination="Wpn-aP-SRZ" id="c5U-Sc-C1b"/>
+                        <outlet property="txtName" destination="fCc-Wc-5xm" id="0K8-WJ-Wjp"/>
+                        <outlet property="txtPhone" destination="hth-M1-htk" id="ImA-GM-Xd1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

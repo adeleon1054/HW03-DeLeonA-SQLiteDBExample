@@ -13,6 +13,10 @@
 		F5A0AE4D1FCCA99F0021CC52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A0AE4C1FCCA99F0021CC52 /* Assets.xcassets */; };
 		F5A0AE501FCCA99F0021CC52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A0AE4E1FCCA99F0021CC52 /* LaunchScreen.storyboard */; };
 		F5A0AE531FCCA99F0021CC52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0AE521FCCA99F0021CC52 /* main.m */; };
+		F5A147DC1FCF2D0000E432C8 /* MyStudents.db in Resources */ = {isa = PBXBuildFile; fileRef = F5A147DB1FCF2D0000E432C8 /* MyStudents.db */; };
+		F5A147E11FCF2E0A00E432C8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A147DF1FCF2D9E00E432C8 /* libsqlite3.tbd */; };
+		F5A147E21FCF2E1400E432C8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A147E01FCF2D9E00E432C8 /* libsqlite3.0.tbd */; };
+		F5A147E81FCF39AF00E432C8 /* StudentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A147E71FCF39AF00E432C8 /* StudentInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		F5A0AE4F1FCCA99F0021CC52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A0AE511FCCA99F0021CC52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A0AE521FCCA99F0021CC52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5A147DB1FCF2D0000E432C8 /* MyStudents.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyStudents.db; sourceTree = "<group>"; };
+		F5A147DF1FCF2D9E00E432C8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F5A147E01FCF2D9E00E432C8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F5A147E61FCF39AF00E432C8 /* StudentInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentInfo.h; sourceTree = "<group>"; };
+		F5A147E71FCF39AF00E432C8 /* StudentInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A147E21FCF2E1400E432C8 /* libsqlite3.0.tbd in Frameworks */,
+				F5A147E11FCF2E0A00E432C8 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,7 @@
 			children = (
 				F5A0AE421FCCA99F0021CC52 /* HW03-DeLeonA-SQLiteDBExample */,
 				F5A0AE411FCCA99F0021CC52 /* Products */,
+				F5A147DE1FCF2D9E00E432C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +70,11 @@
 		F5A0AE421FCCA99F0021CC52 /* HW03-DeLeonA-SQLiteDBExample */ = {
 			isa = PBXGroup;
 			children = (
+				F5A147DD1FCF2D0D00E432C8 /* Database */,
 				F5A0AE431FCCA99F0021CC52 /* AppDelegate.h */,
 				F5A0AE441FCCA99F0021CC52 /* AppDelegate.m */,
+				F5A147E61FCF39AF00E432C8 /* StudentInfo.h */,
+				F5A147E71FCF39AF00E432C8 /* StudentInfo.m */,
 				F5A0AE461FCCA99F0021CC52 /* ViewController.h */,
 				F5A0AE471FCCA99F0021CC52 /* ViewController.m */,
 				F5A0AE491FCCA99F0021CC52 /* Main.storyboard */,
@@ -69,6 +84,23 @@
 				F5A0AE521FCCA99F0021CC52 /* main.m */,
 			);
 			path = "HW03-DeLeonA-SQLiteDBExample";
+			sourceTree = "<group>";
+		};
+		F5A147DD1FCF2D0D00E432C8 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				F5A147DB1FCF2D0000E432C8 /* MyStudents.db */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F5A147DE1FCF2D9E00E432C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5A147E01FCF2D9E00E432C8 /* libsqlite3.0.tbd */,
+				F5A147DF1FCF2D9E00E432C8 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A0AE501FCCA99F0021CC52 /* LaunchScreen.storyboard in Resources */,
+				F5A147DC1FCF2D0000E432C8 /* MyStudents.db in Resources */,
 				F5A0AE4D1FCCA99F0021CC52 /* Assets.xcassets in Resources */,
 				F5A0AE4B1FCCA99F0021CC52 /* Main.storyboard in Resources */,
 			);
@@ -145,6 +178,7 @@
 				F5A0AE481FCCA99F0021CC52 /* ViewController.m in Sources */,
 				F5A0AE531FCCA99F0021CC52 /* main.m in Sources */,
 				F5A0AE451FCCA99F0021CC52 /* AppDelegate.m in Sources */,
+				F5A147E81FCF39AF00E432C8 /* StudentInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
